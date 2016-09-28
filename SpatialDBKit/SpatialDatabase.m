@@ -15,8 +15,8 @@
 
 #import "SpatialDatabase.h"
 #import <objc/runtime.h>
-#import <FMDB/FMResultSet.h>
-#import <FMDB/FMDatabase.h>
+#import "FMResultSet.h"
+#import "FMDatabase.h"
 #import "FMResultSet+SpatialDBKit.h"
 #import <spatialite.h>
 
@@ -25,7 +25,7 @@
 - (id)_swizzleObjectForColumnIndex:(int)columnIdx;
 @end
 
-static char const * const SpatialiteTagKey = "SpatialiteTagKey";
+
 
 static NSUInteger SpatialDatabaseInstances = 0;
 

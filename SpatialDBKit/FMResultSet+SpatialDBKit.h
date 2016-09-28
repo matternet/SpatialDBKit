@@ -8,6 +8,10 @@
 
 #import "FMResultSet.h"
 
+@class ShapeKitGeometry;
+
 @interface FMResultSet (SpatialDBKit)
+
+- (ShapeKitGeometry*)geometryForColumnIndex:(int)columnIdx;
 
 @end

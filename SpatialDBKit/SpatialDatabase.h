@@ -13,7 +13,7 @@
 // See the LICENSE file for more information.
 
 
-#import <FMDB/FMDatabase.h>
+#import "FMDatabase.h"
 
 @interface SpatialDatabase : FMDatabase
 + (NSString*)spatialiteLibVersion;
